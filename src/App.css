@@ -1,0 +1,119 @@
+html, body {
+  width: 1920px;
+  height: 1080px;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  padding: 0px;
+  margin: 0px;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background: #666;
+}
+
+.MenuButton {
+  width: 300px;
+  font-size: 50px;
+}
+
+.HeaderText {
+  font-size: 50px;
+}
+
+.Menu {
+  position: absolute;
+  overflow: auto;
+  left: 0px;
+  top: 200px;
+  width: 300px;
+  height: 880px;
+  -webkit-transition: left 1s;
+  transition: left 1s;  
+}
+
+.Menu.Closed {
+  left: -300px;
+}
+
+.MenuButton {
+  margin: 1em;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.MenuItem {
+  width: 100%;
+  background: #ccc;
+  font-size: 23px;
+  display: block;
+  text-align: center;
+  border: 1px solid;
+}
+
+.MenuItem.Selected {
+  font-size: 30px;
+  background: #666;
+}
+
+.MenuItem:hover {
+  font-size: 30px;
+}
+
+.Grid {
+  position: relative;
+  width: 100%;
+  height: 880px;
+  overflow-x: scroll;
+  padding: 0px;
+  margin: 0px;  
+}
+
+.ScrollMinus {
+  font-size: 50px;  
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0px;
+  height: 100%;
+  width: 100px;
+  background: #888;
+  opacity: 0.5;
+}
+
+.ScrollPlus {
+  font-size: 50px;  
+  display: flex;
+  align-items: center;
+  position: fixed;
+  height: 100%;
+  width: 100px;
+  left: 1820px;
+  background: #888;
+  opacity: 0.8;
+}
+
+.Content {
+  position: absolute;
+  height: 100%;
+}
+
+.Card {
+  position: absolute;
+  margin: 5px;
+  padding: 5px;
+}
+
+.Image {
+  width: 95%;
+  border-radius: 25px;
+  padding: 10px;
+}
